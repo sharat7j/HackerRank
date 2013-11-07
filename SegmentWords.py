@@ -5,7 +5,7 @@ import time
 class Segmentation(object):
     _segmentedList=[]
     def segment(self,inputLine):
-        t = Trie()
+        trie = Trie()
         numerical = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'}
 
         for i in range(inputLine.__len__()):
@@ -23,7 +23,7 @@ class Segmentation(object):
 
             last_word_index = 0
 
-            curNode = t.rootNode
+            curNode = trie.rootNode
             index = 0
             curWord = ""
             curNum = ""
@@ -43,7 +43,7 @@ class Segmentation(object):
 
                     curNode = curNode.getNext(char)
 
-                    if t.is_a_word(curNode):
+                    if trie.is_a_word(curNode):
                         last_word_index = index
                         stack.append(last_word_index)
 
@@ -63,10 +63,10 @@ class Segmentation(object):
 
                         index = pop_index + 1
 
-                    curNode = t.rootNode
+                    curNode = trie.rootNode
                 if index == string.__len__():
-                    if not t.is_a_word(curNode):
-                        curNode = t.rootNode
+                    if not trie.is_a_word(curNode):
+                        curNode = trie.rootNode
                         index = stack.pop() + 1
 
             if curWord is not "":
