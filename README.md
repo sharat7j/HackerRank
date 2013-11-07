@@ -14,15 +14,15 @@ www.appledomains.in => [apple domains]
 
 Twitter Hash Tag Examples:
 
-#honestyhour => [honesty hour]
+ #honestyhour => [honesty hour]
 
-#beinghuman => [being human]
+ #beinghuman => [being human]
 
-#followback => [follow back]
+ #followback => [follow back]
 
-#socialmedia => [social media]
+ #socialmedia => [social media]
 
-#30secondstoearth => [30 seconds to earth]
+ #30secondstoearth => [30 seconds to earth]
 
 The segmentation should be based on the list of 5000 most common words from here Apart from the words in this list, you should also pick up numbers (both integer and decimal) like 100, 200.10 etc.
 
