@@ -71,7 +71,7 @@ class Segmentation(object):
 
             if curWord is not "":
                 list.append(curWord)
-            stack.append(index - 1)
+            
 
             newstack = []
             prev_index = index - 1
